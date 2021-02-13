@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -68,6 +69,115 @@
 @media (min-width: 1440px) {
   .header__container {
     padding: 17px 150px 17px 41px;
+  }
+}
+
+.intro__container {
+  background: url("/images/intro-bg.png") no-repeat;
+  background-size: cover;
+  min-height: 193px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.intro__container-title {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.intro__container-btn {
+  display: none;
+}
+
+.intro__container-description {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .intro__container {
+    min-height: 386px;
+  }
+  .intro__container-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .intro__container-btn {
+    display: block;
+    background-color: #2B4074;
+    border: none;
+    padding: 16px 45px;
+  }
+  .intro__container-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro__container-description {
+    font-family: "Roboto Condensed", sans-serif;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    max-width: 580px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 623px;
+  }
+  .intro__container-title {
+    font-size: 84px;
+    line-height: 84px;
+  }
+  .intro__container-description {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 668px;
+  }
+  .intro__container-title {
+    font-size: 96px;
+    line-height: 96px;
+  }
+  .intro__container-description {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-width: 886px;
+  }
+  .intro__container-link {
+    font-size: 18px;
+  }
+  .intro__container-btn {
+    padding: 20px 47px 18px 47px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,11 @@
 @import "vars.scss";
+@import "fonts.scss";
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+//------------HEADER START------------//
 .header {
 	background-color: $mainColor;
 	&__container {
@@ -52,5 +54,97 @@
 @media (min-width: 1440px) {
 	.header__container {
 		padding: 17px 150px 17px 41px;
+	}
+}
+//------------HEADER END------------//
+.intro__container {
+	background: url("/images/intro-bg.png") no-repeat;
+	background-size: cover;
+	min-height: 193px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	&-title {
+		font-family: "Roboto Condensed", sans-serif;
+		text-transform: uppercase;
+		font-size: 28px;
+		line-height: 28px;
+		color: #ffffff;
+		font-weight: 100;
+	}
+	&-btn {
+		display: none;
+	}
+	&-description {
+		display: none;
+	}
+}
+@media (min-width: 640px) {
+	.intro__container {
+		min-height: 386px;
+		&-title {
+			font-size: 60px;
+			line-height: 60px;
+		}
+		&-btn {
+			display: block;
+			background-color: $mainColor;
+			border: none;
+			padding: 16px 45px;
+		}
+		&-link {
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.intro__container {
+		&-description {
+			font-family: "Roboto Condensed", sans-serif;
+			display: block;
+			font-size: 18px;
+			color: #fff;
+			max-width: 580px;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	.intro__container {
+		justify-content: center;
+		min-height: 623px;
+		&-title{
+			font-size: 84px;
+			line-height: 84px;
+		}
+		&-description{
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (min-width: 1440px) {
+	.intro__container {
+		justify-content: center;
+		min-height: 668px;
+		&-title{
+			font-size: 96px;
+			line-height: 96px;
+		}
+		&-description{
+			font-size: 28px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			min-width: 886px;
+		}
+		&-link{
+			font-size: 18px;
+		}
+		&-btn{
+			padding: 20px 47px 18px 47px
+		}
 	}
 }
