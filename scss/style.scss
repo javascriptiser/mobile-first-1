@@ -57,9 +57,12 @@
 	}
 }
 //------------HEADER END------------//
+
+//------------INTRO START------------//
 .intro__container {
-	background: url("/images/intro-bg.png") no-repeat;
+	background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/images/bg-img.png');
 	background-size: cover;
+	background-position: center center;
 	min-height: 193px;
 	display: flex;
 	flex-direction: column;
@@ -76,6 +79,7 @@
 	}
 	&-btn {
 		display: none;
+		font-size: 18px;
 	}
 	&-description {
 		display: none;
@@ -116,11 +120,11 @@
 	.intro__container {
 		justify-content: center;
 		min-height: 623px;
-		&-title{
+		&-title {
 			font-size: 84px;
 			line-height: 84px;
 		}
-		&-description{
+		&-description {
 			margin-top: 30px;
 			margin-bottom: 10px;
 		}
@@ -130,21 +134,109 @@
 	.intro__container {
 		justify-content: center;
 		min-height: 668px;
-		&-title{
+		&-title {
 			font-size: 96px;
 			line-height: 96px;
 		}
-		&-description{
+		&-description {
 			font-size: 28px;
 			margin-top: 30px;
 			margin-bottom: 30px;
 			min-width: 886px;
 		}
-		&-link{
+		&-link {
 			font-size: 18px;
 		}
-		&-btn{
-			padding: 20px 47px 18px 47px
+		&-btn {
+			padding: 20px 47px 18px 47px;
 		}
 	}
 }
+//------------INTRO END------------//
+
+//------------PROMO START------------//
+.promo__container {
+	background-color: $mainColor;
+	min-height: 300px;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&-title {
+		font-weight: 100;
+		font-size: 24px;
+		text-align: center;
+		min-width: 220px;
+		margin-bottom: 10px;
+	}
+	&-description {
+		font-family: "Dosis", sans-serif;
+		text-align: center;
+		min-width: 260px;
+		font-size: 16px;
+	}
+	&-btn {
+		color: $mainColor;
+		text-transform: uppercase;
+		background-color: #fff;
+		padding: 16px;
+		border: none;
+		border-radius: 5px;
+		margin-top: 40px;
+		max-width: 200px;
+		height: 50px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+	}
+}
+@media (min-width: 640px) {
+	.promo__container {
+		min-height: 254px;
+		&-description {
+			padding: 0px 30px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.promo__container {
+		min-height: 187px;
+		flex-direction: row;
+		align-items: center;
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			max-width: 427px;
+			margin-right: 55px;
+		}
+		&-description {
+			padding: 0;
+			text-align: left;
+		}
+		&-btn {
+			text-align: left;
+			align-self: center;
+			margin-top: 0;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	.promo__container {
+		min-height: 160px;
+		justify-content: space-between;
+		padding: 0px 46px;
+		&-description {
+			min-width: 500px;
+		}
+	}
+}
+@media (min-width: 1440px) {
+	.promo__container {
+		min-height: 192px;
+	}
+}
+//------------PROMO END------------//
