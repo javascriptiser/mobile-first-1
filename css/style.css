@@ -302,4 +302,121 @@
     min-height: 192px;
   }
 }
+
+.services .services__container {
+  min-height: 2800px;
+  padding: 25px 18px 40px 20px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #2B4074;
+}
+
+.services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 250px;
+  margin-bottom: 40px;
+}
+
+.services__content-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.services__content-title::after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-color: #2B4074;
+  margin-top: 20px;
+}
+
+.services__content-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 21px;
+}
+
+.services__content-description {
+  font-size: 15px;
+  color: #797979;
+  margin-top: 20px;
+}
+
+.services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services__items-item {
+  border: 1px solid #d8d8d8;
+  position: relative;
+  min-height: 312px;
+  min-width: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services__items-item:not(:first-child) {
+  border-top: none;
+}
+
+.services__items-item:hover .services__items-details {
+  display: block;
+}
+
+.services__items-item:hover:before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  padding: 20px;
+  min-height: 240px;
+  min-width: 202px;
+  border: 2px solid #2B4074;
+  position: absolute;
+}
+
+.services__items-caption, .services__items-details {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.services__items-details {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
