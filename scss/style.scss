@@ -1,0 +1,56 @@
+@import "vars.scss";
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.header {
+	background-color: $mainColor;
+	&__container {
+		padding: 9px 20px 5px 25px;
+		&__inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&-btn {
+				width: 40px;
+				height: 40px;
+				background-color: #fff;
+				border-radius: 3px;
+				border: none;
+			}
+			&-btn::after {
+				display: block;
+				position: relative;
+				left: 12px;
+				top: -4px;
+				border-radius: 1px;
+				content: "";
+				height: 3px;
+				width: 15px;
+				background-color: $mainColor;
+				box-shadow: 0 5px 0 0 $mainColor, 0 10px 0 0 $mainColor;
+			}
+		}
+	}
+}
+@media (min-width: 640px) {
+	.header__container {
+		padding: 17px 30px 17px 53px;
+	}
+}
+@media (min-width: 768px) {
+	.header__container {
+		padding: 17px 41px 17px 44px;
+	}
+}
+@media (min-width: 1024px) {
+	.header__container {
+		padding: 17px 42px 17px 46px;
+	}
+}
+@media (min-width: 1440px) {
+	.header__container {
+		padding: 17px 150px 17px 41px;
+	}
+}
