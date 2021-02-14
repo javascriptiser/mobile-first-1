@@ -288,6 +288,7 @@
 		flex-direction: column;
 		&-item {
 			border: 1px solid #d8d8d8;
+			padding: 20px;
 			position: relative;
 			min-height: 312px;
 			min-width: 285px;
@@ -304,13 +305,12 @@
 				display: block;
 			}
 		}
-		&-item:hover:before {
-			display: flex;
+		&-item:hover::after {
+			display: block;
 			content: "";
-			padding: 20px;
-			min-height: 240px;
-			min-width: 202px;
-			border: 2px solid $mainColor;
+			min-width: 90%;
+			min-height: 90%;
+			border: 3px solid $mainColor;
 			position: absolute;
 		}
 		&-caption,
@@ -323,6 +323,9 @@
 		}
 		&-details {
 			display: none;
+			& a{
+				text-decoration: none;
+			}
 		}
 	}
 }
